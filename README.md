@@ -125,3 +125,21 @@ For more updates and releases, visit the [Releases section](https://github.com/A
 **Download the latest version from the [Releases section](https://github.com/Aeron1-bit/PyWxDump/releases) and start exploring the possibilities!** 
 
 Feel free to explore the code, contribute, and make this project even better!
+
+
+## Quickstart
+
+### 启动图形界面（推荐新手）
+wxdump ui
+
+### 获取当前微信信息
+wxdump info
+
+### 解密数据库
+wxdump decrypt -k "你的密钥" -i "C:\WeChat Files\wxid_xxx\Msg\MSG.db" -o ./decrypted
+
+### 查看已解密合并的聊天记录
+wxdump dbshow -merge ./decrypted/merge_all.db
+
+### 获取微信数据库路径
+wxdump wx_path -r MSG,MicroMsg
